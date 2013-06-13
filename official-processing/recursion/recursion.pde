@@ -1,5 +1,5 @@
 void setup() {
-  size(640, 64recursionrecursion0);
+  size(640, 640);
   noStroke();
   noLoop();
 }

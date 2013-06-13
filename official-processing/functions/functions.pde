@@ -11,7 +11,7 @@ void draw() {
   drawCircle(width*0.75, height*0.3, 120, 6);
   
   drawSquare(width*0.25, height*0.7, 100, 4);
-  drawSquare(width*0.5, height*0.7, 150, 10);
+  drawSquare(width*0.5, height*0.8, 150, 10);
   drawSquare(width*0.75, height*0.7, 120, 6);
 }
 
@@ -29,6 +29,7 @@ void drawSquare(float xloc, float yloc, int size, int num) {
   float steps = size/num;
   for(int i = 0; i < num; i++) {
     fill((num-i)*grayvalues);
+    rectMode(CENTER);
     rect(xloc, yloc, size - i*steps, size - i*steps);
   }
 }
